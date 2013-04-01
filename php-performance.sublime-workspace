@@ -1,0 +1,467 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"csv",
+				"csvHeader"
+			],
+			[
+				"adv",
+				"advertiserid"
+			],
+			[
+				"adspa",
+				"adspace"
+			],
+			[
+				"rida",
+				"riadata"
+			],
+			[
+				"ria",
+				"riadata"
+			],
+			[
+				"m",
+				"mathTeacher"
+			],
+			[
+				"in",
+				"init"
+			],
+			[
+				"T",
+				"Tclass"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"te",
+				"teacher"
+			],
+			[
+				"p",
+				"prototype"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"checkDate",
+				"checkDatetime"
+			],
+			[
+				"nu",
+				"number_format"
+			],
+			[
+				"is_i",
+				"is_integer"
+			],
+			[
+				"g",
+				"greetings"
+			],
+			[
+				"farr",
+				"farr4"
+			],
+			[
+				"far",
+				"farr2"
+			],
+			[
+				"su",
+				"submit"
+			],
+			[
+				"time",
+				"timerId"
+			],
+			[
+				"f",
+				"format"
+			],
+			[
+				"rand",
+				"randomInt"
+			],
+			[
+				"fr",
+				"format"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"s",
+				"second"
+			],
+			[
+				"ran",
+				"randomInt"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"teac",
+				"Teacher"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"ex",
+				"explode"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"ar",
+				"array"
+			],
+			[
+				"array_in",
+				"array_invert"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"co",
+				"collumnkey"
+			],
+			[
+				"array_f",
+				"array_flip"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 181.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/cloud/SkyDrive/BM/wenjuan/wenjuan.php",
+		"/E/cloud/SkyDrive/BM/wenjuan/index.html",
+		"/E/cloud/SkyDrive/BM/wenjuan/questionnaire.html",
+		"/C/Users/a/Desktop/fpass/src/java/com/mediav/cookie/label/adviva/CreateDefaultLabels.java",
+		"/C/Users/a/Desktop/fpass/src/java/com/mediav/cookie/label/adviva/AdvertiserInfo.java",
+		"/C/Users/a/Desktop/testproject/test.js",
+		"/C/Users/a/Desktop/testproject/sftp-config.json",
+		"/C/Users/a/Desktop/testproject/test.html",
+		"/C/Users/a/Desktop/testproject/test.php",
+		"/C/Users/a/Desktop/testproject/zixuan.json",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Program Files (x86)/Zend/Apache2/conf/extra/httpd-vhosts.conf",
+		"/D/sso/config/authsources.php",
+		"/D/www/default/getria.php",
+		"/C/Users/a/Desktop/RIA_299_2012-09-17_2013-01-14.csv",
+		"/C/Users/a/Desktop/api-client-php-1.0.0/soapclientcore.php",
+		"/C/Users/a/Desktop/api-client-php-1.0.0/ReportService.php",
+		"/C/Users/a/Desktop/api-client-php-1.0.0/KRService.php",
+		"/C/Users/a/Desktop/api-client-php-1.0.0/FolderService.php",
+		"/C/Users/a/Desktop/api-client-php-1.0.0/CreativeService.php",
+		"/C/Users/a/Desktop/api-client-php-1.0.0/AccountService.php",
+		"/C/Users/a/Desktop/api-client-php-1.0.0/KeywordService.php",
+		"/C/Users/a/Desktop/api-client-php-1.0.0/CampaignService.php",
+		"/C/Users/a/Desktop/api-client-php-1.0.0/AdgroupService.php",
+		"/C/Users/a/Desktop/api-client-php-1.0.0/Readme.txt",
+		"/C/Users/a/Desktop/crossdomain.xml",
+		"/C/Users/a/Desktop/瑞行体育_毛订单_手动导入模板_2012-11-23_2012-11-23.xml",
+		"/E/cloud/Dropbox/goagent-goagent-ba27736/server/python/app.yaml",
+		"/E/cloud/Dropbox/goagent-goagent-91cd5e4/server/python/app.yaml",
+		"/E/cloud/Dropbox/goagent-goagent-91cd5e4/README",
+		"/C/Users/a/Desktop/test.php",
+		"/C/Users/a/Desktop/test.txt",
+		"/C/Users/a/Desktop/test.js",
+		"/C/Users/a/Desktop/AccountBalance.php",
+		"/C/Users/a/AppData/Roaming/Sublime Text 2/Packages/User/PHP.sublime-build",
+		"/C/Users/a/AppData/Roaming/Sublime Text 2/Packages/Python/Python.sublime-build",
+		"/D/PHP/php.ini",
+		"/C/Users/a/AppData/Roaming/Sublime Text 2/Packages/User/php.sublime-build",
+		"/D/www/default/dotTest.html",
+		"/E/cloud/SkyDrive/BM/dotnum/dotTest.jsp",
+		"/D/www/default/app.js",
+		"/E/cloud/SkyDrive/BM/dotest/app.js",
+		"/C/Users/a/Desktop/test_list2.json",
+		"/C/Users/a/Desktop/test_list3.json",
+		"/C/Users/a/Desktop/test_list1.json",
+		"/C/Users/a/Desktop/test_map.json",
+		"/D/www/default/index.html",
+		"/C/Program Files (x86)/Zend/Apache2/conf/httpd.conf",
+		"/C/Program Files (x86)/Zend/Apache2/conf/zend.conf",
+		"/C/Users/a/Downloads/korea.ps",
+		"/C/Users/a/Desktop/Settings.ini",
+		"/C/Users/a/Desktop/httpd-vhosts",
+		"/C/Users/a/Desktop/text",
+		"/C/Users/a/Downloads/index.php",
+		"/C/Users/a/Downloads/index (2).php",
+		"/C/Users/a/Downloads/index (1).php",
+		"/C/Program Files (x86)/Zend/Apache2/logs/orguard.media.com-error.log",
+		"/C/Users/a/Desktop/我买网_有效订单_手动导入模板_2012-09-01_2012-09-14 (2).csv",
+		"/C/Users/a/Desktop/1.csv",
+		"/C/Users/a/Desktop/womai.csv",
+		"/E/cloud/Dropbox/quickshare/manifest.json",
+		"/D/tomcat/webapps/mondrian/WEB-INF/datasources.xml",
+		"/D/tomcat/webapps/mondrian/WEB-INF/classes/foodmart/service.properties",
+		"/C/Users/a/Desktop/sso.php",
+		"/D/sso/metadata/saml20-idp-remote.php",
+		"/D/www/default/test.php",
+		"/C/Users/a/Desktop/chart.txt",
+		"/D/www/puijs/.htaccess",
+		"/C/Users/a/Desktop/mondrian.war",
+		"/D/Apache2.2/conf/httpd.conf",
+		"/D/sso/metadata/saml20-sp-remote.php",
+		"/D/Apache2.2/conf/extra/httpd-vhosts.conf",
+		"/D/sso/config/config.php",
+		"/D/sso/metadata/adfs-idp-hosted.php",
+		"/D/www/default/raw.php",
+		"/D/PHP/PEAR/pear.bat",
+		"/D/Apache2.2/htdocs/index.php",
+		"/D/Apache2.2/conf/httpd.conf.bak",
+		"/D/PHP1/php.ini",
+		"/D/Apache2.2/htdocs/test.php",
+		"/D/php/php.ini",
+		"/D/php/install.txt",
+		"/D/Apache2.2/logs/error.log",
+		"/D/Apache2.2/logs/httpd.pid",
+		"/C/Users/a/Desktop/mondrian-3.3.0.14703/build.xml",
+		"/C/Users/a/Desktop/mondrian-3.3.0.14703/workbench/readme.txt",
+		"/C/Users/a/Desktop/mondrian-3.3.0.14703/workbench/drivers/readme.txt",
+		"/C/Users/a/Desktop/mondrian-3.3.0.14703/build.properties",
+		"/C/Users/a/Desktop/cpspreview.class.php",
+		"/D/tomcat/webapps/mondrian/WEB-INF/mondrian.properties",
+		"/D/tomcat/webapps/mondrian/WEB-INF/web.xml",
+		"/D/tomcat/conf/tomcat-users.xml",
+		"/C/Users/a/Desktop/mondrian-3.3.0.14703/VERSION.txt",
+		"/C/Users/a/Desktop/mondrian-3.3.0.14703/README.txt",
+		"/C/Users/a/Desktop/adviva cube 文档/Mediav_infobright.xml",
+		"/C/Users/a/Desktop/adviva cube 文档/MdxQuery.java",
+		"/C/Users/a/Desktop/adviva cube 文档/MdxBuilder.php",
+		"/C/Users/a/Desktop/advertiser.css"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"'123',\n'123',\n'123',\n'123',\n'123',",
+			"'123',",
+			"',",
+			"123\n123\n123\n123\n123",
+			"'))\n",
+			"价格上区间",
+			"= Array ( [0] => Array ( [datasource] => 用户 [advertiserid] => 184 [advertisername] => 凡客诚品 [campaignid] => 114036 [campaignname] => 凡客诚品_效果资源_ROI_20121001_20121031 [solutionid] => 1036498 [solutionname] => 凡客诚品_搜狐_首页_全流量底部通栏右半通栏_标签定向_40935 [bannerid] => [bannername] => [adspaceid] => 搜狐_首页_全流量底部通栏右半通栏_470x100_15k [adspacename] => 40935 [order] => vancl20121030001 [clicktime] => [ordertime] => 2012/10/29 01:01:00 [orderprice] => 517 [banlancytpye] => ROI [banlancyratio] => 01:01.2 [grossordervalue] => ￥430.83 [order_entitye] => adviva [user_type] => 0 ) [1] => Array ( [datasource] => 用户 [advertiserid] => 184 [advertisername] => 凡客诚品 [campaignid] => 114036 [campaignname] => 凡客诚品_效果资源_ROI_20121001_20121031 [solutionid] => 1036500 [solutionname] => 凡客诚品_搜狐_首页_全流量底部通栏右半通栏_无定向_40935 [bannerid] => [bannername] => [adspaceid] => 搜狐_首页_全流量底部通栏右半通栏_470x100_15k [adspacename] => 40935 [order] => vancl20121030002 [clicktime] => [ordertime] => 2012/10/29 01:01:00 [orderprice] => 685 [banlancytpye] => ROI [banlancyratio] => 01:01.2 [grossordervalue] => ￥570.83 [order_entitye] => adviva [user_type] => 0 ) [2] => Array ( [datasource] => 用户 [advertiserid] => 184 [advertisername] => 凡客诚品 [campaignid] => 114036 [campaignname] => 凡客诚品_效果资源_ROI_20121001_20121031 [solutionid] => 1036493 [solutionname] => 凡客诚品_搜狐_首页_全流量底部通栏左半通栏_标签定向_40928 [bannerid] => [bannername] => [adspaceid] => 搜狐_首页_全流量底部通栏左半通栏_470x100_15k [adspacename] => 40928 [order] => vancl20121030003 [clicktime] => [ordertime] => 2012/10/29 01:01:00 [orderprice] => 1060 [banlancytpye] => ROI [banlancyratio] => 01:01.2 [grossordervalue] => ￥883.33 [order_entitye] => adviva [user_type] => 0 ) [3] => Array ( [datasource] => 用户 [advertiserid] => 184 [advertisername] => 凡客诚品 [campaignid] => 114036 [campaignname] => 凡客诚品_效果资源_ROI_20121001_20121031 [solutionid] => 1036495 [solutionname] => 凡客诚品_搜狐_首页_全流量底部通栏左半通栏_无定向_40928 [bannerid] => [bannername] => [adspaceid] => 搜狐_首页_全流量底部通栏左半通栏_470x100_15k [adspacename] => 40928 [order] => vancl20121030004 [clicktime] => [ordertime] => 2012/10/29 01:01:00 [orderprice] => 4702 [banlancytpye] => ROI [banlancyratio] => 01:01.2 [grossordervalue] => ￥3918.33 [order_entitye] => adviva [user_type] => 0 ) [4] => Array ( [datasource] => 用户 [advertiserid] => 184 [advertisername] => 凡客诚品 [campaignid] => 114036 [campaignname] => 凡客诚品_效果资源_ROI_20121001_20121031 [solutionid] => 1034126 [solutionname] => 凡客诚品_网易_首页_旅游下全流量04中通栏_标签定向_36413 [bannerid] => [bannername] => [adspaceid] => 网易_首页_旅游下全流量04中通栏_360x100_20k [adspacename] => 36413 [order] => vancl20121030005 [clicktime] => [ordertime] => 2012/10/29 01:01:00 [orderprice] => 597 [banlancytpye] => ROI [banlancyratio] => 01:01.2 [grossordervalue] => ￥497.50 [order_entitye] => adviva [user_type] => 0 ) [5] => Array ( [datasource] => 用户 [advertiserid] => 184 [advertisername] => 凡客诚品 [campaignid] => 114036 [campaignname] => 凡客诚品_效果资源_ROI_20121001_20121031 [solutionid] => 1034134 [solutionname] => 凡客诚品_网易_首页_旅游下全流量04中通栏_无定向_36413 [bannerid] => [bannername] => [adspaceid] => 网易_首页_旅游下全流量04中通栏_360x100_20k [adspacename] => 36413 [order] => vancl20121030006 [clicktime] => [ordertime] => 2012/10/29 01:01:00 [orderprice] => 774 [banlancytpye] => ROI [banlancyratio] => 01:01.2 [grossordervalue] => ￥645.00 [order_entitye] => adviva [user_type] => 0 ) [6] => Array ( [datasource] => 用户 [advertiserid] => 184 [advertisername] => 凡客诚品 [campaignid] => 114036 [campaignname] => 凡客诚品_效果资源_ROI_20121001_20121031 [solutionid] => 1034135 [solutionname] => 凡客诚品_中国天气网_预报详情页_全流量顶部通栏01右_无定向_1013773 [bannerid] => [bannername] => [adspaceid] => 中国天气网_预报详情页_全流量顶部通栏01右_560x90_30k [adspacename] => 1013773 [order] => vancl20121030008 [clicktime] => [ordertime] => 2012/10/29 01:01:00 [orderprice] => 255 [banlancytpye] => ROI [banlancyratio] => 01:01.2 [grossordervalue] => ￥212.50 [order_entitye] => adviva [user_type] => 0 ) );\n	print($a);",
+			"error",
+			"start_time",
+			"check_is_number",
+			";\n",
+			");\n",
+			">\n",
+			"neu6",
+			"    	\n",
+			"out_charset",
+			"alias",
+			"SSO",
+			"sso",
+			"PHP_PEAR_INSTALL_DIR",
+			"D:\\PHPUnit/PEAR",
+			"#<",
+			"<VirtualHost *:80>\n    ServerAdmin webmaster@dummy-host.www.iweb.com\n    DocumentRoot \"D:/Apache2.2/docs/dummy-host.www.iweb.com\"\n    ServerName dummy-host.www.iweb.com\n    ServerAlias www.dummy-host.www.iweb.com\n    ErrorLog \"logs/dummy-host.www.iweb.com-error.log\"\n    CustomLog \"logs/dummy-host.www.iweb.com-access.log\" common\n</VirtualHost>\n\n<VirtualHost *:80>\n    ServerAdmin webmaster@dummy-host2.www.iweb.com\n    DocumentRoot \"D:/Apache2.2/docs/dummy-host2.www.iweb.com\"\n    ServerName dummy-host2.www.iweb.com\n    ErrorLog \"logs/dummy-host2.www.iweb.com-error.log\"\n    CustomLog \"logs/dummy-host2.www.iweb.com-access.log\" common\n</VirtualHost>\n",
+			"\n</",
+			"\n<",
+			"extension",
+			"iweb",
+			"iweb.com",
+			"VirtualHost",
+			"Documentroot",
+			"documentroot",
+			"document",
+			"loadmodule",
+			"EXTENSION",
+			"loadmodule",
+			"loadmodeule",
+			"sybase",
+			"extension",
+			"aspell",
+			"sqlite",
+			"sqllite",
+			"sql",
+			"sqllite3",
+			"apache2",
+			"lo",
+			"extension",
+			"connected",
+			"t;",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 179.0
+	},
+	"output.sftp":
+	{
+		"height": 142.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/D/Apache2.2/conf/httpd.conf"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 287.0,
+	"status_bar_visible": true
+}
