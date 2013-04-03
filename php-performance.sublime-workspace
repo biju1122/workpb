@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"hea",
+				"header	Tag"
+			],
+			[
 				"json",
 				"json_encode"
 			],
@@ -167,13 +171,37 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 159458,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/common.css",
+			"settings":
+			{
+				"buffer_size": 19626,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 58.0,
 		"selected_items":
 		[
+			[
+				"tidy",
+				"Tidy HTML"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
 			[
 				"pac",
 				"Package Control: Install Package"
@@ -185,13 +213,9 @@
 			[
 				"git",
 				"Package Control: Install Package"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -208,6 +232,14 @@
 	},
 	"file_history":
 	[
+		"/D/github/php-performance/styles/sand.css",
+		"/D/github/php-performance/index.html",
+		"/D/github/php-performance/html5.html",
+		"/D/github/php-performance/html5-slide-template.html",
+		"/D/github/php-performance/js/mootools.js",
+		"/D/github/php-performance/phpslides.html",
+		"/C/Users/a/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/C/Users/a/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
 		"/E/cloud/SkyDrive/BM/wenjuan/wenjuan.php",
 		"/E/cloud/SkyDrive/BM/wenjuan/index.html",
 		"/E/cloud/SkyDrive/BM/wenjuan/questionnaire.html",
@@ -313,7 +345,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 102.0,
 		"where_history":
 		[
 		]
@@ -389,8 +421,71 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 159458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13881,
+								13881
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5710.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "styles/common.css",
+					"settings":
+					{
+						"buffer_size": 19626,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7121,
+								7121
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8119.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
