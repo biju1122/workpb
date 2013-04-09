@@ -235,7 +235,7 @@
                 </div>
                 <div class="slide" id="commonoperation-slide">
                     <header>
-                        PHP 中的常用操作
+                        <h2>PHP 中的常用操作</h2>
                     </header>
                     <section>
                         <ul id="timeline">
@@ -285,9 +285,7 @@
                 </div>
                 <div class="slide" id="phpstring-compare">
                     <header>
-                        <h1>
-                            判断字符串的相等
-                        </h1>
+                        判断字符串的相等
                     </header>
                     <section>
                       <table>
@@ -305,436 +303,116 @@
                       if($a == $b); 最佳方式
                     </section>
                 </div>
-                <div class="slide transitionSlide" id="offline-storage-title">
-                    <section class="middle">
-                        <h2>
-                            Offline / Storage
-                        </h2>
-                        <p>
-                            Expect the unexpected
-                        </p><img src="http://www.html5rocks.com/static/images/identity/classes_64/HTML5_Offline_Storage_64.png" title="HTML5 Offline &amp; Storage" alt="HTML5 Offline &amp; Storage">
-                    </section>
-                </div>
-                <div class="slide offline-storage" id="web-storage">
+                <div class="slide" id="phpstring-find">
                     <header>
-                        <span class="js">JS</span>
-                        <h1>
-                            Web Storage
-                        </h1>
+                      <h1>
+                            字符串查找
+                      </h1>
                     </header>
                     <section>
-                        <pre>
-// use localStorage for persistent storage
-// use sessionStorage for per tab storage
-saveButton.addEventListener('click', function () {
-  window.<b>localStorage</b>.<b>setItem</b>('value', area.value);
-  window.<b>localStorage</b>.<b>setItem</b>('timestamp', (new Date()).getTime());
-}, false);
-textarea.value = window.<b>localStorage</b>.<b>getItem</b>('value');
-</pre>
-                        <p id="localstorage-message">
-                            Save text value on the client side (crash-safe)
-                        </p>
-                        <textarea id="ta" placeholder="Type your text here...">
-</textarea> <button id="save-ta">Save</button>
-                        <p id="ta-log"></p><script defer type="text/javascript">
-(function(){
-
-                        try {
-                        (window.localStorage.getItem) // will throw in Firefox under some settings
-                        } catch(e){
-                        return; // quit because dom.storage.enabled is false
-                        }
-
-                        var area = document.querySelector('#ta');
-                        // place content from previous edit
-                        if (!area.value) {
-                        area.value = window.localStorage.getItem('value');
-                        }
-                        updateLog(false);
-
-                        // your content will be saved locally
-                        document.querySelector('#save-ta').addEventListener('click', function () {
-                        window.localStorage.setItem('value', area.value);
-                        window.localStorage.setItem('timestamp', (new Date()).getTime());
-                        updateLog(true);
-                        }, false);
-
-                        function updateLog(new_save) {
-                        var log = document.querySelector("#ta-log");
-                        var delta = 0;
-                        if (window.localStorage.getItem('value')) {
-                        delta = ((new Date()).getTime() - (new Date()).setTime(window.localStorage.getItem('timestamp'))) / 1000;
-                        if (new_save) {
-                        log.textContent = 'Saved. Content will be available after browser refresh/reopen.';
-                        setTimeout(function() {
-                        log.textContent = '';
-                        }, 3000);
-                        } else {
-                        log.textContent = 'last saved: ' + delta + 's ago';
-                        }
-                        }
-                        }
-
-                        })();  
-                        </script>
+                        <table>
+                            <tbody><tr>
+                            <th>Method</th>
+                            <th>Not found</th>
+                            <th>Found at the start</th>
+                            <th>Found in the middle</th>
+                            <th>Found at the end</th>
+                            <th>Summary</th>
+                            <th>Index</th>
+                            </tr>
+                            <tr><td><code>strstr($haystack, $needle)</code></td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>4&nbsp;ms</td><td class="yes">100</td></tr><tr><td><code>strpos($haystack, $needle) !== false</code></td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>4&nbsp;ms</td><td class="almost">103</td></tr><tr><td><code>strstr($haystack, $needle) !== false</code></td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>4&nbsp;ms</td><td class="almost">109</td></tr><tr><td><code>stristr($haystack, $needle)</code></td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>8&nbsp;ms</td><td class="almost">198</td></tr><tr><td><code>preg_match("/$needle/", $haystack)</code></td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>8&nbsp;ms</td><td class="almost">194</td></tr><tr><td><code>preg_match("/$needle/i", $haystack)</code></td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>8&nbsp;ms</td><td class="almost">196</td></tr><tr><td><code>preg_match("/$needle/S", $haystack)</code></td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>8&nbsp;ms</td><td class="almost">190</td></tr><tr><td><code>ereg($needle, $haystack)</code></td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>9&nbsp;ms</td><td>17&nbsp;ms</td><td>30&nbsp;ms</td><td class="buggy">745</td></tr></tbody>
+                          </table>
+                    </section>
+                    <section>
+                      strstr($haystack,$needle),strpos($haystack,$needle)!==false 最佳方案
                     </section>
                 </div>
-                <div class="slide offline-storage" id="web-sql-db">
+                <div class="slide offline-storage" id="phpstring-start">
                     <header>
-                        <span class="js">JS</span>
-                        <h1>
-                            Web SQL Database
-                        </h1>
+                         判断字符串是否以另一个字符串开始
                     </header>
                     <section>
-                        <pre>
-var db = window.<b>openDatabase</b>("DBName", "1.0", "description", 5*1024*1024); //5MB
-db.<b>transaction</b>(function(tx) {
-  tx.<b>executeSql</b>(<em>"SELECT * FROM test"</em>, [], successCallback, errorCallback);
-});
-</pre>
-                        <div class="center" id="websqldb-example">
-                            <input type="text" id="todoitem"> <button onclick="webSqlSample.newRecord()">new to do item</button> <button onclick="webSqlSample.createTable()">create table</button> <button onclick="webSqlSample.dropTable()">drop table</button>
-                            <p>
-                                See the generated database: Developer &gt; Developer Tools &gt; Storage
-                            </p>
-                            <ul class="record-list" id="db-results"></ul>
-                            <div id="db-log"></div>
-                        </div><script defer type="text/javascript">
-var webSqlSample = (function() {
-                        var db;
-                        var log = document.getElementById('db-log');
-                        if (window.openDatabase) {
-                        db = openDatabase("DBTest", "1.0", "HTML5 Database API example", 200000);
-                        showRecords();  
-                        }
-                        document.getElementById('db-results').addEventListener('click', function(e) { e.preventDefault(); }, false);
-
-                        function onError(tx, error) {
-                        log.innerHTML = '<p class="error">Error: ' + error.message + '</p>';
-                        }
-
-                        // select all records and display them
-                        function showRecords() {
-                        document.getElementById('db-results').innerHTML = '';
-                        db.transaction(function(tx) {
-                        tx.executeSql("SELECT * FROM Table1Test", [], function(tx, result) {
-                        for (var i = 0, item = null; i < result.rows.length; i++) {
-                        item = result.rows.item(i);
-                        document.getElementById('db-results').innerHTML += 
-                          '<li><span contenteditable="true" onkeyup="webSqlSample.updateRecord('+item['id']+', this)">'+
-                          item['text'] + '</span> <a href="#" onclick="webSqlSample.deleteRecord('+item['id']+')">[Delete]</a></li>';
-                        }
-                        });
-                        });
-                        }
-
-                        function createTable() {
-                        db.transaction(function(tx) {
-                        tx.executeSql("CREATE TABLE Table1Test (id REAL UNIQUE, text TEXT)", [],
-                        function(tx) {  log.innerHTML = '<p>"Table1Test" created!</p>' },
-                        onError);
-                        });
-                        }
-
-                        // add record with random values
-                        function newRecord() {
-                        var num = Math.round(Math.random() * 10000); // random data
-                        db.transaction(function(tx) {
-                        tx.executeSql("INSERT INTO Table1Test (id, text) VALUES (?, ?)", [num, document.querySelector('#todoitem').value],
-                        function(tx, result) {
-                        log.innerHTML = '';
-                        showRecords();
-                        }, 
-                        onError);
-                        });
-                        }
-
-                        function updateRecord(id, textEl) {
-                        db.transaction(function(tx) {
-                        tx.executeSql("UPDATE Table1Test SET text = ? WHERE id = ?", [textEl.innerHTML, id], null, onError);
-                        });
-                        }
-
-                        function deleteRecord(id) {
-                        db.transaction(function(tx) {
-                        tx.executeSql("DELETE FROM Table1Test WHERE id=?", [id],
-                        function(tx, result) { showRecords() }, 
-                        onError);
-                        });
-                        }
-
-                        // delete table from db
-                        function dropTable() {
-                        db.transaction(function(tx) {
-                        tx.executeSql("DROP TABLE Table1Test", [],
-                        function(tx) { showRecords() }, 
-                        onError);
-                        });
-                        }
-
-                        return {
-                        newRecord: newRecord,
-                        createTable: createTable,
-                        updateRecord: updateRecord,
-                        deleteRecord: deleteRecord,
-                        dropTable: dropTable
-                        }
-                        })();
-                        </script>
+                        <table>
+                                <tbody><tr>
+                                <th>Method</th>
+                                <th>Not found</th>
+                                <th>Found at the start</th>
+                                <th>Found in the middle</th>
+                                <th>Found at the end</th>
+                                <th>Summary</th>
+                                <th>Index</th>
+                                </tr>
+                                <tr><td><code>strncmp($haystack, $needle, strlen($needle)) === 0</code></td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>6&nbsp;ms</td><td class="almost">155</td></tr><tr><td><code>strncmp($haystack, "Test", 4) === 0</code></td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>4&nbsp;ms</td><td class="almost">101</td></tr><tr><td><code>strncasecmp($haystack, $needle, strlen($needle)) === 0</code></td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>6&nbsp;ms</td><td class="almost">170</td></tr><tr><td><code>strpos($haystack, $needle) === 0</code></td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>4&nbsp;ms</td><td class="yes">100</td></tr><tr><td><code>substr($haystack, 0, strlen($needle)) === $needle</code></td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>6&nbsp;ms</td><td class="almost">170</td></tr><tr><td><code>strcmp(substr($haystack, 0, strlen($needle)), $needle) === 0</code></td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>9&nbsp;ms</td><td class="incomplete">242</td></tr><tr><td><code>preg_match("/^" . preg_quote($needle, "/") . "/", $haystack)</code></td><td>3&nbsp;ms</td><td>3&nbsp;ms</td><td>3&nbsp;ms</td><td>3&nbsp;ms</td><td>12&nbsp;ms</td><td class="incomplete">325</td></tr></tbody>
+                        </table>
+                    </section>
+                    <section>
+                      strpos($haystack, $needle) === 0 是最佳的方式
                     </section>
                 </div>
-                <div class="slide offline-storage" id="indexed-db">
+                <div class="slide offline-storage" id="phpstring-end">
                     <header>
-                        <span class="js">JS</span>
-                        <h1>
-                            IndexedDB
-                        </h1>
+                        判断字符串的结束标记
                     </header>
                     <section>
-                        <pre>
-var idbRequest = window.<b>indexedDB</b>.<b>open</b>('Database Name');
-idbRequest.onsuccess = function(event) {
-  <b>var db = event.srcElement.result</b>;
-  var transaction = db.<b>transaction</b>([], <b>IDBTransaction.READ_ONLY</b>);
-  var curRequest = transaction.<b>objectStore</b>('ObjectStore Name').<b>openCursor</b>();
-  curRequest.<b>onsuccess</b> = ...;
-};
-</pre>
-                        <div class="center" id="indexeddb-example">
-                            <input type="text" placeholder="key" id="idb-key" size="10"> <input type="text" placeholder="value" id="idb-value" size="15"> <button onclick="indexedDbSample.idbSet()">set</button> <button onclick="indexedDbSample.idbCreate()">create objectStore</button> <button onclick="indexedDbSample.idbRemove()">remove objectStore</button>
-                            <div id="idb-log"></div>
-                            <div class="record-list" id="idb-results-wrapper"></div>
-                        </div><script defer type="text/javascript">
-var indexedDbSample = (function() {
-                        var idb_;
-                        var idbRequest_;
-                        var idbLog_ = document.getElementById('idb-log');
-                        var idResultsWrapper_ = document.getElementById('idb-results-wrapper');
-
-                        // IndexedDB spec is still evolving, various browsers keep it
-                        // behind various flags and implementation varies.
-                        if ('webkitIndexedDB' in window) {
-                        window.indexedDB = window.webkitIndexedDB;
-                        window.IDBTransaction = window.webkitIDBTransaction;
-                        } else if ('moz_indexedDB' in window) {
-                        window.indexedDB = window.moz_indexedDB;
-                        }
-
-                        // Open our IndexedDB if the browser supports it.
-                        if (window.indexedDB) {
-                        idbRequest_ = window.indexedDB.open("Test", "A test object store.");
-                        idbRequest_.onerror = idbError_;
-                        idbRequest_.addEventListener('success', function(event) {
-                        idb_ = event.srcElement.result;
-                        idbShow_(event);
-                        }, false);
-                        }
-
-                        function idbError_(event) {
-                        idbLog_.innerHTML += '<p class="error">Error: ' +
-                                     event.message + ' (' + event.code + ')</p>';
-                        }
-
-                        function idbShow_(event) {
-                        if (!idb_.objectStoreNames.contains('myObjectStore')) {
-                        idbLog_.innerHTML = "<p>Object store not yet created.</p>";
-                        return;
-                        }
-
-                        var html = [];
-                        var transaction = idb_.transaction([], IDBTransaction.READ_ONLY); // Read is default.
-                        var request = transaction.objectStore('myObjectStore').openCursor(); // Get all results.
-
-                        // This callback will continue to be called until we have no more results.
-                        request.onsuccess = function(e) {
-                        var cursor = e.srcElement.result;
-                        if (!cursor) {
-                        idResultsWrapper_.innerHTML = '<ul class="record-list" id="idb-results">' + html.join('') + '</ul>';
-                        return;
-                        }
-                        html.push('<li><span class="keyval" contenteditable onblur="indexedDbSample.updateKey(\'',
-                            cursor.key, '\', this)">', cursor.key, '</span> ',
-                            '=> <span class="keyval" contenteditable onblur="indexedDbSample.updateValue(\'',
-                            cursor.key, '\', this)">', cursor.value, '</span>&nbsp; ',
-                            '<a href="javascript:void(0)" onclick="indexedDbSample.deleteKey(\'',
-                            cursor.key, '\')">[Delete]</a></li>');
-                        cursor['continue']();
-                        }
-                        request.onerror = idbError_;
-                        }
-
-                        function idbCreate_() {
-                        if (!idb_) {
-                        if (idbRequest_) {
-                        idbRequest_.addEventListener('success', removeObjectStore, false); // If indexedDB is still opening, just queue this up.
-                        }
-                        return;
-                        }
-
-                        var request = idb_.setVersion('the new version string');
-                        request.onerror = idbError_;
-                        request.onsuccess = function(e) {
-                        if (!idb_.objectStoreNames.contains('myObjectStore')) {
-                        try {
-                        var objectStore = idb_.createObjectStore('myObjectStore', null); // FF is requiring the 2nd keyPath arg. It can be optional :(
-                        idbLog_.innerHTML = "<p>Object store created.</p>";
-                        } catch (err) {
-                        idbLog_.innerHTML = '<p class="error">' + err.toString() + '</p>';
-                        }
-                        } else {
-                        idbLog_.innerHTML = '<p class="error">Object store already exists.</p>';
-                        }
-                        }
-                        }
-
-                        function idbSet_() {
-                        if (!idb_) {
-                        if (idbRequest_) {
-                        idbRequest_.addEventListener('success', removeObjectStore, false); // If indexedDB is still opening, just queue this up.
-                        }
-                        return;
-                        }
-
-                        if (!idb_.objectStoreNames.contains('myObjectStore')) {
-                        idbLog_.innerHTML = "<p class=\"error\">Object store doesn't exist.</p>";
-                        return;
-                        }
-
-                        // Create a transaction that locks the world.
-                        var objectStore = idb_.transaction([], IDBTransaction.READ_WRITE)
-                                      .objectStore("myObjectStore");
-                        var request = objectStore.put(
-                        document.getElementById('idb-value').value,
-                        document.getElementById('idb-key').value);
-                        request.onerror = idbError_;
-                        request.onsuccess = idbShow_;
-                        }
-
-                        function updateKey_(key, element) {
-                        var newKey = element.textContent;
-                        var transaction = idb_.transaction([], IDBTransaction.READ_WRITE); // Create a transaction that locks the world.
-                        var objectStore = transaction.objectStore("myObjectStore");
-                        var request = objectStore.get(key);
-                        request.onerror = idbError_;
-                        request.onsuccess = function(event) {
-                        var value = event.srcElement.result;
-                        var request;
-                        if (objectStore['delete']) {
-                        request = objectStore['delete'](key);
-                        } else {
-                        request = objectStore.remove(key);
-                        }
-                        request.onerror = idbError_;
-                        request.onsuccess = function(event) {
-                        var request = objectStore.add(value, newKey);
-                        request.onerror = idbError_;
-                        request.onsuccess = idbShow_;
-                        };
-                        };
-                        }
-
-                        function updateValue_(key, element) {
-                        var transaction = idb_.transaction([], IDBTransaction.READ_WRITE); // Create a transaction that locks the world.
-                        var objectStore = transaction.objectStore("myObjectStore");
-                        var request = objectStore.put(element.textContent, key);
-                        request.onerror = idbError_;
-                        request.onsuccess = idbShow_;
-                        }
-
-                        function deleteKey_(key) {
-                        var transaction = idb_.transaction([], IDBTransaction.READ_WRITE); // Create a transaction that locks the world.
-                        var objectStore = transaction.objectStore("myObjectStore");
-                        var request;
-                        if (objectStore['delete']) {
-                        request = objectStore['delete'](key);
-                        } else {
-                        request = objectStore.remove(key);
-                        }
-                        request.onerror = idbError_;
-                        request.onsuccess = idbShow_;
-                        }
-
-                        function idbRemove_() {
-                        if (!idb_) {
-                        if (idbRequest_) {
-                        idbRequest_.addEventListener('success', removeObjectStore, false); // If indexedDB is still opening, just queue this up.
-                        }
-                        return;
-                        }
-
-                        var request = idb_.setVersion("the new version string");
-                        request.onerror = idbError_;
-                        request.onsuccess = function(event) {
-
-                        if (idb_.objectStoreNames.contains('myObjectStore')) {
-                        try {
-                        // Spec has been updated to deleteObjectStore.
-                        if (idb_.deleteObjectStore) {
-                        idb_.deleteObjectStore('myObjectStore');
-                        } else {
-                        idb_.removeObjectStore('myObjectStore');
-                        }
-                        idResultsWrapper_.innerHTML = '';
-                        idbLog_.innerHTML = "<p>Object store removed.</p>";
-                        } catch (err) {
-                        idbLog_.innerHTML = '<p class="error">' + err.toString() + '</p>';
-                        }
-                        } else {
-                        idbLog_.innerHTML = "<p class=\"error\">Object store doesn't exist.</p>";
-                        }
-                        };
-                        }
-
-                        return {
-                        idbSet: idbSet_,
-                        idbCreate: idbCreate_,
-                        idbRemove: idbRemove_,
-                        updateKey: updateKey_,
-                        updateValue: updateValue_,
-                        deleteKey: deleteKey_
-                        }
-                        })();
-                        </script>
+                        <table>
+                                <tbody><tr>
+                                <th>Method</th>
+                                <th>Not found</th>
+                                <th>Found at the start</th>
+                                <th>Found in the middle</th>
+                                <th>Found at the end</th>
+                                <th>Summary</th>
+                                <th>Index</th>
+                                </tr>
+                                <tr><td><code>substr($haystack, strlen($haystack) - strlen($needle)) === $needle</code></td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>8&nbsp;ms</td><td class="almost">125</td></tr><tr><td><code>substr($haystack, -strlen($needle)) === $needle</code></td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>6&nbsp;ms</td><td class="yes">100</td></tr><tr><td><code>strcmp(substr($haystack, -strlen($needle)), $needle) === 0</code></td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>9&nbsp;ms</td><td class="almost">140</td></tr><tr><td><code>preg_match("/" . preg_quote($needle, "/") . "$/", $haystack)</code></td><td>3&nbsp;ms</td><td>4&nbsp;ms</td><td>4&nbsp;ms</td><td>4&nbsp;ms</td><td>14&nbsp;ms</td><td class="incomplete">223</td></tr></tbody>
+                        </table>
+                    </section>
+                    <section>
+                      substr($haystack, -strlen($needle)) === $needle 最佳方式
                     </section>
                 </div>
-                <div class="slide offline-storage" id="app-cache">
+                <div class="slide offline-storage" id="phpstring-replace">
                     <header>
-                        <span class="js">JS</span>
-                        <h1>
-                            Application Cache
-                        </h1>
+                        字符串替换
+                    </header>
+                    <section>
+                        <table>
+                                <tbody><tr>
+                                <th>Method</th>
+                                <th>Not found</th>
+                                <th>Found at the start</th>
+                                <th>Found in the middle</th>
+                                <th>Found at the end</th>
+                                <th>Summary</th>
+                                <th>Index</th>
+                                </tr>
+                                <tr><td><code>str_replace($search, $replace, $subject)</code></td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>2&nbsp;ms</td><td>7&nbsp;ms</td><td class="yes">100</td></tr><tr><td><code>preg_replace("/$search/", $replace, $subject)</code></td><td>3&nbsp;ms</td><td>3&nbsp;ms</td><td>3&nbsp;ms</td><td>3&nbsp;ms</td><td>13&nbsp;ms</td><td class="almost">177</td></tr><tr><td><code>preg_replace("/$search/S", $replace, $subject)</code></td><td>3&nbsp;ms</td><td>3&nbsp;ms</td><td>3&nbsp;ms</td><td>3&nbsp;ms</td><td>13&nbsp;ms</td><td class="almost">174</td></tr><tr><td><code>ereg_replace($search, $replace, $subject)</code></td><td>3&nbsp;ms</td><td>6&nbsp;ms</td><td>12&nbsp;ms</td><td>19&nbsp;ms</td><td>40&nbsp;ms</td><td class="buggy">556</td></tr><tr><td><code>strtr($subject, $array)</code></td><td>13&nbsp;ms</td><td>12&nbsp;ms</td><td>13&nbsp;ms</td><td>12&nbsp;ms</td><td>50&nbsp;ms</td><td class="buggy">695</td></tr></tbody>
+                        </table>
+                    </section>
+                    <section>
+                      str_replace($search, $replace, $subject) 为最佳方案
+                    </section>
+                </div>
+                <div class="slide offline-storage" id="phpstring-trim">
+                    <header>
+                        修剪字符串两端
                     </header>
                     <section class="appcache-examples">
-                        <pre>
-&lt;html <b>manifest="cache.appcache"</b>&gt;
-</pre>
-                        <pre>
-window.<b>applicationCache</b>.addEventListener('updateready', function(e) {
-  if (window.<b>applicationCache</b>.<b>status</b> == window.<b>applicationCache</b>.<b>UPDATEREADY</b>) {
-    window.<b>applicationCache</b>.<b>swapCache()</b>;
-    if (confirm('A new version of this site is available. Load it?')) {
-      window.location.reload();
-    }
-  }
-}, false);
-</pre>cache.appcache:
-                        <pre>
-CACHE MANIFEST
-# version 1.0.0
-
-CACHE:
-/html5/src/logic.js
-/html5/src/style.css
-/html5/src/background.png
-
-NETWORK:
-*
-</pre>
-                        <p id="appcache-message">
-                            Turn off your internet connection and refresh this page! <img src="src/refresh.png" onclick="window.location.reload();">
-                        </p>
+                        <table>
+                                <tbody><tr>
+                                <th>Method</th>
+                                <th>Not found</th>
+                                <th>Found at start</th>
+                                <th>Found at end</th>
+                                <th>Found at both sides</th>
+                                <th>Summary</th>
+                                <th>Index</th>
+                                </tr>
+                                <tr><td><code>trim($string, ",")</code></td><td>&gt;0&nbsp;ms</td><td>&gt;0&nbsp;ms</td><td>&gt;0&nbsp;ms</td><td>&gt;0&nbsp;ms</td><td>1&nbsp;ms</td><td class="yes">100</td></tr><tr><td><code>preg_replace('/^,*|,*$/', "", $string)</code></td><td>7&nbsp;ms</td><td>7&nbsp;ms</td><td>7&nbsp;ms</td><td>7&nbsp;ms</td><td>29&nbsp;ms</td><td class="buggy">3616</td></tr><tr><td><code>preg_replace('/^,*|,*$/m', "", $string)</code></td><td>12&nbsp;ms</td><td>12&nbsp;ms</td><td>12&nbsp;ms</td><td>12&nbsp;ms</td><td>47&nbsp;ms</td><td class="no">5928</td></tr><tr><td><code>preg_replace('/^,+|,+$/', "", $string)</code></td><td>&gt;0&nbsp;ms</td><td>&gt;0&nbsp;ms</td><td>&gt;0&nbsp;ms</td><td>&gt;0&nbsp;ms</td><td>2&nbsp;ms</td><td class="incomplete">228</td></tr><tr><td><code>preg_replace('/^,+|,+$/m', "", $string)</code></td><td>&gt;0&nbsp;ms</td><td>&gt;0&nbsp;ms</td><td>&gt;0&nbsp;ms</td><td>&gt;0&nbsp;ms</td><td>2&nbsp;ms</td><td class="incomplete">224</td></tr><tr><td><code>preg_replace('/^,+/', "", preg_replace('/,+$/', "", …))</code></td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>1&nbsp;ms</td><td>3&nbsp;ms</td><td class="incomplete">376</td></tr></tbody>
+                        </table>
+                    </section>
+                    <section>
+                      trim($string, ",") 为最佳方案
                     </section>
                 </div>
                 <div class="slide offline-storage" id="quota-api">
